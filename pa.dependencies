@@ -1,9 +1,7 @@
 [
     {
-        "remote":       "github",
-        "repository":   "deedwar/android_device_sony_fuji-common",
-        "target_path":  "device/sony/fuji-common",
-        "revision":     "kitkat"
+        "repository":   "android_device_sony_fuji-common",
+        "target_path":  "device/sony/fuji-common"
     },
     {
         "remote":       "github",
