@@ -7,7 +7,7 @@
         "remote":       "github",
         "repository":   "deedwar/evolve",
         "target_path":  "kernel/sony/msm8x60",
-        "revision":     "evolve-1.9"
+        "revision":     "evolve-1.12"
     },
     {
         "remote":       "cm",
