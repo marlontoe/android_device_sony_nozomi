@@ -16,9 +16,6 @@
 # Inherit from nozomi
 $(call inherit-product, device/sony/nozomi/full_nozomi.mk)
 
-# Inherit CM common GSM stuff.
-$(call inherit-product, vendor/carbon/config/common_gsm.mk)
-
 # Inherit CM common Phone stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
 
