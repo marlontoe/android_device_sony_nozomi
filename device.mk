@@ -15,7 +15,7 @@
 #
 
 # define build target(normal/native/loop)
-BUILD_TARGET := native
+BUILD_TARGET := normal
 
 # overlay
 DEVICE_PACKAGE_OVERLAYS += device/sony/nozomi/overlay
@@ -30,6 +30,15 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # kernel
 PRODUCT_PACKAGES += \
     kernel
+
+# Post recovery script
+PRODUCT_COPY_FILES += \
+    device/sony/nozomi/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
+    device/sony/nozomi/recovery/rebootrecovery.sh:recovery/root/sbin/rebootrecovery.sh
+
+# Device specific part for two-stage boot
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
 
 # Light
 PRODUCT_PACKAGES += \
@@ -177,6 +186,14 @@ else
         $(LOCAL_PATH)/config/fstab.semc:root/fstab.semc \
         $(LOCAL_PATH)/config/init.sony-platform.rc:root/init.sony-platform.rc
 endif
+
+# Recovery
+PRODUCT_PACKAGES += \
+    extract_elf_ramdisk
+
+# TWRP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
