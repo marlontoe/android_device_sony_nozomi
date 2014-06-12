@@ -34,6 +34,10 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 COMMON_GLOBAL_CFLAGS += -DLEGACY_BLOB_COMPATIBLE
 
+# kernel
+TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
+TARGET_KERNEL_SOURCE := kernel/nozomi
+
 # display
 USE_OPENGL_RENDERER := true
 BOARD_EGL_CFG := device/sony/nozomi/config/egl.cfg
