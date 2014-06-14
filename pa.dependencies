@@ -10,36 +10,6 @@
         "revision":     "evolve-1.17"
     },
     {
-        "remote":       "cm",
-        "repository":   "CyanogenMod/android_hardware_qcom_bt",
-        "target_path":  "hardware/qcom/bt",
-        "revision":     "cm-11.0"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "CyanogenMod/android_hardware_qcom_gps",
-        "target_path":  "hardware/qcom/gps",
-        "revision":     "cm-11.0"
-    },
-    {
-        "remote":       "github",
-        "repository":   "OpenSEMC/android_hardware_qcom_media",
-        "target_path":  "hardware/qcom/media",
-        "revision":     "cm-11.0"
-    },
-    {
-        "remote":       "github",
-        "repository":   "CyanogenMod/android_hardware_qcom_audio-caf",
-        "target_path":  "hardware/qcom/audio-caf",
-        "revision":     "cm-11.0"
-    },
-    {
-        "remote":       "cm",
-        "repository":   "CyanogenMod/android_hardware_qcom_display-caf",
-        "target_path":  "hardware/qcom/display-caf",
-        "revision":     "cm-11.0"
-    },
-    {
         "remote":       "github",
         "repository":   "OpenSEMC/vendor_broadcom_wlan",
         "target_path":  "vendor/broadcom/wlan",
