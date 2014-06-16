@@ -36,7 +36,7 @@ COMMON_GLOBAL_CFLAGS += -DLEGACY_BLOB_COMPATIBLE
 
 # kernel
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
-TARGET_KERNEL_SOURCE := kernel/nozomi
+TARGET_KERNEL_SOURCE := kernel/sony/msm8x60
 
 # display
 USE_OPENGL_RENDERER := true
