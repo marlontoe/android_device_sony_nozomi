@@ -17,6 +17,12 @@
     },
     {
         "remote":       "github",
+        "repository":   "OpenSEMC/android_hardware_qcom_media",
+        "target_path":  "hardware/qcom/media",
+        "revision":     "cm-11.0"
+    },    
+    {
+        "remote":       "github",
         "repository":   "OpenSEMC/proprietary_vendor_sony",
         "target_path":  "vendor/sony",
         "revision":     "cm-11.0"
