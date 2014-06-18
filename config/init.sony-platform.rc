@@ -138,6 +138,7 @@ on boot
     chown system camera /sys/devices/i2c-3/3-0053/flash_synchronization
     chown system camera /sys/devices/i2c-3/3-0053/flash_current
     chown system camera /sys/devices/i2c-3/3-0053/status
+    chmod 666 /sys/devices/i2c-3/3-0053/torch_enable
 
     # Owner for the proximity sensor
     chown system system /sys/devices/i2c-3/3-0054/threshold
