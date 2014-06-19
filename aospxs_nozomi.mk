@@ -15,7 +15,10 @@
 #
 $(call inherit-product, device/sony/nozomi/full_nozomi.mk)
 
-PRODUCT_NAME := aosp_nozomi
+# Inherit AOSPXS
+$(call inherit-product, vendor/aospxs/config/common.mk)
+
+PRODUCT_NAME := aosxs_nozomi
 
 PRODUCT_PACKAGES += \
     Launcher3
