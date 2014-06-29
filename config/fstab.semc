@@ -14,3 +14,6 @@
 
 # CWM
 dev/block/mmcblk0p15  /sdcard  auto  defaults  recoveryonly
+
+# ZRAM
+/dev/block/zram0  none  swap  defaults zramsize=134217728
