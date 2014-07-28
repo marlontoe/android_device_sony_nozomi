@@ -19,7 +19,6 @@
  */
 
 #define DEBUG_COPYBIT 0
-#include <sync/sync.h>
 #include <copybit.h>
 #include <utils/Timers.h>
 #include "hwc_copybit.h"

@@ -17,7 +17,6 @@
  * limitations under the License.
 */
 
-#include <sync/sync.h>
 #include "overlayRotator.h"
 #include "overlayUtils.h"
 #include "mdp_version.h"
