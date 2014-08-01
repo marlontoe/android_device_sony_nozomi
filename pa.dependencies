@@ -7,7 +7,7 @@
         "remote":       "github",
         "repository":   "deedwar/evolve",
         "target_path":  "kernel/sony/msm8x60",
-        "revision":     "evolve-1.19"
+        "revision":     "evolve-1.17"
     },
     {
         "remote":       "github",
@@ -23,8 +23,8 @@
     },    
     {
         "remote":       "github",
-        "repository":   "deedwar/proprietary_vendor_sony",
+        "repository":   "OpenSEMC/proprietary_vendor_sony",
         "target_path":  "vendor/sony",
-        "revision":     "kitkat"
+        "revision":     "cm-11.0"
     }
 ]
