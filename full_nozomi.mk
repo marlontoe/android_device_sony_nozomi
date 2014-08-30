@@ -16,6 +16,7 @@
  
 # Torch
 PRODUCT_PACKAGES := \
+    Trebuchet \
     Torch \
     OmniSwitch
 
