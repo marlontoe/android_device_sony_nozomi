@@ -1,2 +1,1 @@
-add_lunch_combo cm_nozomi-eng
-add_lunch_combo cm_nozomi-userdebug
+add_lunch_combo mahdi_nozomi-userdebug
