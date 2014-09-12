@@ -1,2 +1,2 @@
-add_lunch_combo vandir_nozomi-eng
-add_lunch_combo vandir_nozomi-userdebug
+add_lunch_combo vanir_nozomi-eng
+add_lunch_combo vanir_nozomi-userdebug
