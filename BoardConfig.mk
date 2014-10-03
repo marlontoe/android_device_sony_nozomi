@@ -23,6 +23,7 @@ USE_CAMERA_STUB := true
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_CONFIG := opensemc_fuji_nozomi_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7.4
 
 # Sony-supplied broadcom wlan module
 BOARD_WLAN_BROADCOM := true
@@ -45,6 +46,10 @@ TARGET_RECOVERY_INITRC := device/sony/nozomi/recovery/init.rc
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/bq27520"
+TW_CUSTOM_BATTERY_STATUS_PATH := "/sys/class/power_supply/bq24185"
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_USERIMAGES_USE_EXT4 := true
