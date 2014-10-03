@@ -1,3 +1,2 @@
-for i in eng userdebug; do
-	add_lunch_combo full_nozomi-${i}
-done
+add_lunch_combo vanir_nozomi-eng
+add_lunch_combo vanir_nozomi-userdebug
