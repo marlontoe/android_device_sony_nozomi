@@ -23,6 +23,8 @@ USE_CAMERA_STUB := true
 -include device/sony/fuji-common/BoardConfigCommon.mk
 
 TARGET_KERNEL_CONFIG := opensemc_fuji_nozomi_defconfig
+TARGET_GCC_VERSION := 4.8-linaro
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7.4
 
 # Sony-supplied broadcom wlan module
 BOARD_WLAN_BROADCOM := true
