@@ -14,25 +14,28 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/sony/nozomi/full_nozomi.mk)
-
-# Inherit CM common GSM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
-# Inherit CM common Phone stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit CM common Phone stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit device configuration
+$(call inherit-product, device/sony/nozomi/full_nozomi.mk)
+
+# Inherit GSM stuff.
+$(call inherit-product, vendor/slim/config/gsm.mk)
+
+# Inherit common Phone stuff.
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+
+# Release name
+PRODUCT_RELEASE_NAME := nozomi
+
+
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := slim_nozomi
+PRODUCT_DEVICE := nozomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=LT26i_1257-5499 BUILD_FINGERPRINT=SEMC/LT26i_1257-5499/LT26i:4.0.4/6.1.A.2.50/zfd_zw:user/release-keys PRIVATE_BUILD_DESC="LT26i-user 4.0.4 6.1.A.2.50 zfd_zw test-keys"
-
-PRODUCT_NAME := cm_nozomi
-PRODUCT_DEVICE := nozomi
