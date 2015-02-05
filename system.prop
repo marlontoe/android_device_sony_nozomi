@@ -47,7 +47,7 @@ ro.opengles.version=131072
 
 # hardware/libhardwarey_legacy/wifi have fuji patch. Need them
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=15
+wifi.supplicant_scan_interval=180
 
 # System props for SOLS
 ro.semc.sols.product-code=97
