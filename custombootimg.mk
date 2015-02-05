@@ -106,5 +106,3 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 	$(hide) python $(MKELF) -o $@ $(PRODUCT_OUT)/kernel@0x40208000 $(PRODUCT_OUT)/ramdisk-recovery.img@0x41500000,ramdisk vendor/sony/nozomi/proprietary/boot/RPM.bin@0x20000,rpm
 	@echo ----- Made recovery image -------- $@
 #	$(hide) $(call assert-max-image-size,$@,$(BOARD_RECOVERYIMAGE_PARTITION_SIZE),raw)
-endif
-endif

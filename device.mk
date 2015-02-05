@@ -35,6 +35,15 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/nozomi/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Post recovery script
+PRODUCT_COPY_FILES += \
+    device/sony/nozomi/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
+    device/sony/nozomi/recovery/rebootrecovery.sh:recovery/root/sbin/rebootrecovery.sh
+
+# Device specific part for two-stage boot
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
+
 # kernel
 PRODUCT_PACKAGES += \
     kernel
