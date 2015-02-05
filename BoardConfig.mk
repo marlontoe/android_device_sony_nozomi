@@ -121,7 +121,6 @@ TARGET_BOOTLOADER_TYPE := fastboot
 BOARD_HAS_NO_MISC_PARTITION := true
 
 # TWRP
-RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_PRE_COMMAND := "touch /cache/recovery/boot;sync;"
 TARGET_RECOVERY_INITRC := device/sony/nozomi/recovery/init.rc
@@ -159,7 +158,7 @@ TARGET_OTA_ASSERT_DEVICE := LT26i,nozomi
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/nozomi/custom/custombootimg.mk
 
 # custom ota
-BOARD_CUSTOM_OTA_MK := device/sony/nozomi/custom/customota.mk
+#BOARD_CUSTOM_OTA_MK := device/sony/nozomi/custom/customota.mk
 
 # Superuser
 TARGET_NO_SUPERUSER := false
