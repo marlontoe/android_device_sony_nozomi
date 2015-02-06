@@ -1,12 +1,12 @@
 #!/sbin/sh
 
-nProp=/tmp/vanir-l5.prop
+nProp=/tmp/vanir_nozomi.prop
 
-#copy .vanir-l5.prop
+#copy .vanir_nozomi.prop
 rm -f $nProp
-cp -f /sdcard/.vanir-l5.prop $nProp
+cp -f /sdcard/.vanir_nozomi.prop $nProp
 
-#create vanir-l5.prop if it doesn't exist
+#create vanir_nozomi.prop if it doesn't exist
 [ ! -f $nProp ] && touch $nProp
 
 #check if kernel key is available and if not
