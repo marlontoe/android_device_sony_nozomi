@@ -1,10 +1,11 @@
 LOCAL_PATH := $(call my-dir)
+NOW := $(date +"%Y%m%d")
 
-name := nAOSProm-5.0
+name := vanir_nozomi_5.0.2.0
 ifeq ($(TARGET_BUILD_TYPE),debug)
-  name := $(name)_debug
+  name := $(name)_userdebug
 endif
-name := $(name)-bxx
+name := $(name)$(NOW)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 

@@ -1,12 +1,12 @@
 #!/sbin/sh
 
-nProp=/tmp/nAOSProm.prop
+nProp=/tmp/vanir-l5.prop
 
-#copy .nAOSProm.prop
+#copy .vanir-l5.prop
 rm -f $nProp
-cp -f /sdcard/.nAOSProm.prop $nProp
+cp -f /sdcard/.vanir-l5.prop $nProp
 
-#create nAOSProm.prop if it doesn't exist
+#create vanir-l5.prop if it doesn't exist
 [ ! -f $nProp ] && touch $nProp
 
 #check if kernel key is available and if not
