@@ -35,15 +35,6 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/nozomi/overlay
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# Post recovery script
-PRODUCT_COPY_FILES += \
-    device/sony/nozomi/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
-    device/sony/nozomi/recovery/rebootrecovery.sh:recovery/root/sbin/rebootrecovery.sh
-
-# Device specific part for two-stage boot
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/recovery/bootrec-device:recovery/bootrec-device
-
 # kernel
 PRODUCT_PACKAGES += \
     kernel
@@ -81,6 +72,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
     $(LOCAL_PATH)/config/media_codecs.xml:system/etc/media_codecs.xml \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/config/audio_policy.conf:system/etc/audio_policy.conf \
@@ -196,6 +188,12 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
+# Fm radio
+#PRODUCT_PACKAGES += \
+#    com.stericsson.hardware.fm \
+#    com.stericsson.hardware.fm.xml \
+#    FmRadio
+
 # Key layouts and touchscreen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/clearpad.idc:system/usr/idc/clearpad.idc \
@@ -226,25 +224,12 @@ PRODUCT_COPY_FILES += \
 # music  : control music with volume and camera keys (1=> enable, 0=> disable)
 PRODUCT_PROPERTY_OVERRIDES += \
     qemu.hw.mainkeys=1 \
-    qemu.hw.mainkeys.layout=1 \
-    qemu.hw.mainkeys.music=1
 
 # Recovery
 PRODUCT_PACKAGES += \
     busybox-static \
     extract_elf_ramdisk \
     init.sh
-
-# Superuser
-ifneq ($(TARGET_NO_SUPERUSER),true)
-
-PRODUCT_PACKAGES += \
-    su
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=3
-
-endif
 
 # Filesystem tools
 PRODUCT_PACKAGES += \
