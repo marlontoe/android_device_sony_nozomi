@@ -220,8 +220,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bootanimation.zip:system/media/bootanimation.zip
 
 # Hw keys
-# layout : 1=> Modern Android 4.4+, 0=> Deprecated Android 2.3
-# music  : control music with volume and camera keys (1=> enable, 0=> disable)
 PRODUCT_PROPERTY_OVERRIDES += \
     qemu.hw.mainkeys=1 \
 
