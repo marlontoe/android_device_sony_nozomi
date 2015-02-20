@@ -133,7 +133,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # fs (ext4,f2fs,dynamic)
-BUILD_FS := dynamic
+BUILD_FS := f2fs
 
 # fstab
 TARGET_RECOVERY_FSTAB := device/sony/nozomi/config/recovery.$(BUILD_FS).fstab
