@@ -83,7 +83,7 @@ BOARD_HAVE_FMRADIO := true
 BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
-TARGET_NO_MULTIKERNEL := false
+TARGET_NO_MULTIKERNEL := true
 
 BOARD_KERNEL_MSM := true
 KERNEL_DEFCONFIG := fuji_nozomi_defconfig
