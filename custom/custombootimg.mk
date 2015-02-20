@@ -18,8 +18,14 @@
 LOCAL_PATH := $(call my-dir)
 
 ifneq ($(USE_CCACHE),)
-  ccache := /usr/bin/ccache
+  ccache := $(shell which ccache)
+  ifeq ($(ccache),)
+    ccache := $(ANDROID_BUILD_TOP)/prebuilts/misc/$(HOST_PREBUILT_TAG)/ccache/ccache
+  endif
+  ccache := $(strip $(wildcard $(ccache)))
+endif
 KERNEL_CROSS_COMPILE:=CROSS_COMPILE="$(ccache) $(KERNEL_TOOLCHAIN_PATH)"
+ccache = 
 
 MKELF := device/sony/nozomi/tools/mkelf.py
 RPMBIN := vendor/sony/nozomi/proprietary/boot/RPM.bin
