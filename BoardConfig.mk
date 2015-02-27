@@ -83,6 +83,7 @@ BOARD_HAVE_FMRADIO := true
 BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7
 BOARD_KERNEL_MSM := true
 TARGET_KERNEL_SOURCE := kernel/msm
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
