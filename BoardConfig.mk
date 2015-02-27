@@ -83,6 +83,7 @@ BOARD_HAVE_FMRADIO := true
 BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
+TARGET_KERNEL_SOURCE := kernel/sony/msm8x60
 TARGET_NO_MULTIKERNEL := true
 
 BOARD_KERNEL_MSM := true
