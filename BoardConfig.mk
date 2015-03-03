@@ -91,9 +91,6 @@ BOARD_KERNEL_MSM := true
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
 
 ifeq ($(TARGET_NO_MULTIKERNEL),false)
-BOARD_KERNEL_MSM_OC := true
-TARGET_KERNEL_CONFIG_OC := fuji_nozomi_oc_defconfig
-
 BOARD_KERNEL_MSM_OC_ULTRA := true
 TARGET_KERNEL_CONFIG_OC_ULTRA := fuji_nozomi_oc_ultra_defconfig
 endif
