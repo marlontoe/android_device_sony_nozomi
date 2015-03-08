@@ -146,7 +146,7 @@ TARGET_OTA_ASSERT_DEVICE := LT26i,nozomi
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/nozomi/custom/custombootimg.mk
 
 # custom ota
-BOARD_CUSTOM_OTA_MK := device/sony/nozomi/custom/customota.mk
+# BOARD_CUSTOM_OTA_MK := device/sony/nozomi/custom/customota.mk
 
 # CM Hardware
 BOARD_HARDWARE_CLASS := device/sony/nozomi/cmhw/
