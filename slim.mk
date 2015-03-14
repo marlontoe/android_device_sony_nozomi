@@ -26,4 +26,4 @@ PRODUCT_MANUFACTURER := Sony
 
 # Enable Torch
 PRODUCT_PACKAGES += Torch
-PRODUCT_PACKAGES += OmniSwitch
+# PRODUCT_PACKAGES += OmniSwitch
