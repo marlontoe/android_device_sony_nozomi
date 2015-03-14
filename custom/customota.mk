@@ -9,7 +9,7 @@ else
   FILE_NAME_TAG := $(BUILD_NUMBER)
 endif
 
-name := uCyan-12.0-$(TARGET_PRODUCT)
+name := $(TARGET_PRODUCT)
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
@@ -22,10 +22,6 @@ $(INTERNAL_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(DEFAULT_KEY_CERT_PAIR)
 MULTI_BOOT := boot.img
 
 ifeq ($(TARGET_NO_MULTIKERNEL),false)
-ifeq ($(BOARD_KERNEL_MSM_OC),true)
-MULTI_BOOT := $(MULTI_BOOT),boot.img-oc
-endif
-
 ifeq ($(BOARD_KERNEL_MSM_OC_ULTRA),true)
 MULTI_BOOT := $(MULTI_BOOT),boot.img-oc_ultra
 endif

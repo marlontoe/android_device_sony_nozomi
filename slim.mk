@@ -23,3 +23,7 @@ PRODUCT_NAME := slim_nozomi
 PRODUCT_BRAND := Xperia
 PRODUCT_MODEL := S
 PRODUCT_MANUFACTURER := Sony
+
+# Enable Torch
+PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += OmniSwitch
