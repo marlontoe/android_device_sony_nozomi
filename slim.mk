@@ -20,8 +20,8 @@ PRODUCT_RELEASE_NAME := nozomi
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nozomi
 PRODUCT_NAME := slim_nozomi
-PRODUCT_BRAND := Xperia
-PRODUCT_MODEL := S
+PRODUCT_BRAND := Sony
+PRODUCT_MODEL := Xperia S
 PRODUCT_MANUFACTURER := Sony
 
 # Enable Torch
