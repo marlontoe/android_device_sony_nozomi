@@ -18,5 +18,5 @@ $(call inherit-product, device/sony/nozomi/full_nozomi.mk)
 PRODUCT_NAME := aosp_nozomi
 
 PRODUCT_PACKAGES += \
-    Launcher3 \
-    OmniSwitch
+    Launcher3
+
