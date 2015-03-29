@@ -84,7 +84,7 @@ BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
 BOARD_KERNEL_MSM := true
-TARGET_KERNEL_SOURCE := kernel/msm
+TARGET_KERNEL_SOURCE := kernel/sony/nozomi
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
 
 # board
