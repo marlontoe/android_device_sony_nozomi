@@ -139,6 +139,8 @@ stathub.enabled=0
 #
 # ADDITIONAL_NOZOMI_BUILD_PROPERTIES
 #
+ro.sf.lcd_density=320
+net.bt.name=Android
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 ro.com.google.clientidbase.ms=android-sonymobile
 ro.ril.hsxpa=1
@@ -146,3 +148,5 @@ ro.ril.gprsclass=10
 ro.usb.pid_suffix=169
 ro.service.swiqi.supported=true
 persist.service.swiqi.enable=1
+dalvik.vm.heapidealfree=8388608
+dalvik.vm.heaputilization=0.25
