@@ -20,6 +20,9 @@
 # definition file).
 #
 
+# CM-12.1 TARGET_UNIFIED_DEVICE
+TARGET_UNIFIED_DEVICE := nozomi
+
 # cpu
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
