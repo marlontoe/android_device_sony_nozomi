@@ -137,11 +137,12 @@ net.nw.cache.orderby=weight
 stathub.enabled=0
 
 #
-# ADDITIONAL_NOZOMI_BUILD_PROPERTIES
+# ADDITIONAL_BUILD_PROPERTIES
 #
 ro.sf.lcd_density=320
 net.bt.name=Android
 ro.vendor.extension_library=/system/lib/libqc-opt.so
+ro.com.google.clientidbase=android-sonyericsson
 ro.com.google.clientidbase.ms=android-sonymobile
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
