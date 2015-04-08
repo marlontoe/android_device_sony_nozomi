@@ -27,6 +27,7 @@ import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothProfile;
+import android.bluetooth.BluetoothRemoteDiRecord;
 import android.bluetooth.BluetoothUuid;
 import android.bluetooth.IBluetooth;
 import android.bluetooth.IBluetoothCallback;
@@ -921,6 +922,15 @@ public class AdapterService extends Service {
             return service.setRemoteAlias(device, name);
         }
 
+        public boolean getRemoteTrust(BluetoothDevice device) {
+            return false;
+        }
+
+
+        public boolean setRemoteTrust(BluetoothDevice device, boolean trustValue) {
+            return false;
+        }
+
         public int getRemoteClass(BluetoothDevice device) {
             if (!Utils.checkCallerAllowManagedProfiles(mService)) {
                 Log.w(TAG, "getRemoteClass() - Not allowed for non-active user");
@@ -1071,6 +1081,19 @@ public class AdapterService extends Service {
             AdapterService service = getService();
             if (service == null) return null;
             return service.createSocketChannel(type, serviceName, uuid, port, flag);
+        }
+
+        public int setSocketOpt(int type, int channel, int optionName, byte [] optionVal,
+                                                    int optionLen) {
+            return -1;
+        }
+
+        public int getSocketOpt(int type, int channel, int optionName, byte [] optionVal) {
+            return -1;
+        }
+
+        public BluetoothRemoteDiRecord getRemoteDiRecord(BluetoothDevice device) {
+            return null;
         }
 
         public boolean configHciSnoopLog(boolean enable) {
