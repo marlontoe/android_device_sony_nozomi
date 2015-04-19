@@ -88,6 +88,7 @@ TARGET_KERNEL_USE_AOSP_TOOLCHAIN := false
 BOARD_KERNEL_MSM := true
 TARGET_KERNEL_SOURCE := kernel/sony/nozomi
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-4.7/bin/arm-eabi-
 
 # board
 TARGET_BOARD_PLATFORM := msm8660
