@@ -1,10 +1,10 @@
 LOCAL_PATH := $(call my-dir)
 
-name := uCyan-12.1
+name := uCyan
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)-mad-v01
+name := $(name)-$(CM_VERSION)-mad
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
