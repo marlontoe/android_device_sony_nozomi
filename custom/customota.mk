@@ -4,7 +4,7 @@ name := vanir-5.1
 ifeq ($(TARGET_BUILD_TYPE),debug)
   name := $(name)_debug
 endif
-name := $(name)-$(usr)-$(BUILD_VERSION_TAGS)-$(BUILD_NUMBER)
+name := $(name)-$(USR)-$(BUILD_VERSION_TAGS)-$(BUILD_NUMBER)
 
 INTERNAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/$(name).zip
 
