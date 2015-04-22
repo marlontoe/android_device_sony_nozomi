@@ -16,6 +16,7 @@
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
+	OmniSwitch \
         LiveWallpapers \
         LiveWallpapersPicker \
         VisualizationWallpapers
