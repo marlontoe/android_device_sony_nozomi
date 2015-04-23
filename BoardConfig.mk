@@ -83,12 +83,12 @@ BOARD_HAVE_FMRADIO := true
 BOARD_HAVE_FMRADIO_BCM := true
 
 # kernel
-# TARGET_KERNEL_TOOLCHAIN_VERSION := linaro-4.7
+TARGET_KERNEL_TOOLCHAIN_VERSION := linaro-4.7.4-generic
 TARGET_KERNEL_USE_AOSP_TOOLCHAIN := false
 BOARD_KERNEL_MSM := true
 TARGET_KERNEL_SOURCE := kernel/sony/nozomi
 TARGET_KERNEL_CONFIG := fuji_nozomi_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/linaro/linaro-4.7.4-nozomi/bin/arm-eabi-
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/linaro/linaro-4.7.4-nozomi/bin/arm-eabi-
 
 # board
 TARGET_BOARD_PLATFORM := msm8660
@@ -130,6 +130,7 @@ BUILD_FS := dynamic
 # fstab
 TARGET_RECOVERY_FSTAB := device/sony/nozomi/config/recovery.$(BUILD_FS).fstab
 RECOVERY_FSTAB_VERSION := 2
+rom=vanir
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := LT26i,nozomi
